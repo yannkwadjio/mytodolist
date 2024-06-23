@@ -1,0 +1,52 @@
+*{
+box-sizing:border-box;
+}
+
+body,html{
+font-family:"Century Gothic",verdane,Tahoma,sans-serif;
+background:-webkit-linear-gradient(left,#099,#079,#059);
+padding:0px;
+margin: 0px;
+}
+
+#accueil,#menuListe,#notification,#archive{
+    width: 50px;
+    border-radius:20px;
+    align-content: center;
+}
+
+
+#todolist{
+    width: 75px; 
+}
+
+.row{
+height:100px;
+}
+
+#accueil:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+#menuListe:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+#notification:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+#archive:hover{
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+  .libelleAccueil{
+  font-weight:bold;
+  align-items:center;
+  }
+
+.libAccueil{
+    display: none;
+    -webkit-transition: display 2s;
+    -moz-transition: display 2s;
+    -o-transition: display 2s;
+    transition: display 2s;
+
+}
