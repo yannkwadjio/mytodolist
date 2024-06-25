@@ -1,12 +1,10 @@
-package com.todolist.todolist.controller;
+package com.myToDoList.controller;
 
-
-import com.todolist.todolist.dto.add.TaskAdd;
-import com.todolist.todolist.dto.add.ToDoListAdd;
-import com.todolist.todolist.dto.show.TaskShow;
-import com.todolist.todolist.entity.ToDoList;
-import com.todolist.todolist.repository.ToDoListRepository;
-import com.todolist.todolist.service.interfaceService.ToDoListService;
+import com.myToDoList.dto.add.TaskAdd;
+import com.myToDoList.dto.add.ToDoListAdd;
+import com.myToDoList.dto.show.TaskShow;
+import com.myToDoList.entity.ToDoList;
+import com.myToDoList.service.interfaceService.ToDoListService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

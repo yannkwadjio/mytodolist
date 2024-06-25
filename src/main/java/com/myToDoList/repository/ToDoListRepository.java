@@ -1,7 +1,7 @@
-package com.todolist.todolist.repository;
+package com.myToDoList.repository;
 
 
-import com.todolist.todolist.entity.ToDoList;
+import com.myToDoList.entity.ToDoList;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

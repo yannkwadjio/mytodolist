@@ -1,9 +1,9 @@
-package com.todolist.todolist.dto.add;
+package com.myToDoList.dto.add;
 
-import com.todolist.todolist.entity.Priorite;
-import com.todolist.todolist.entity.Repetition;
-import com.todolist.todolist.entity.StatutTache;
-import jakarta.persistence.GeneratedValue;
+
+import com.myToDoList.entity.Priorite;
+import com.myToDoList.entity.Repetition;
+import com.myToDoList.entity.StatutTache;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

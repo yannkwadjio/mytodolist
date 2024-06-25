@@ -1,9 +1,11 @@
-package com.todolist.todolist.service.interfaceService;
+package com.myToDoList.service.interfaceService;
 
-import com.todolist.todolist.dto.add.TaskAdd;
-import com.todolist.todolist.dto.add.ToDoListAdd;
-import com.todolist.todolist.dto.show.TaskShow;
-import com.todolist.todolist.entity.ToDoList;
+
+
+import com.myToDoList.dto.add.TaskAdd;
+import com.myToDoList.dto.add.ToDoListAdd;
+import com.myToDoList.dto.show.TaskShow;
+import com.myToDoList.entity.ToDoList;
 
 import java.time.LocalDate;
 import java.util.List;
