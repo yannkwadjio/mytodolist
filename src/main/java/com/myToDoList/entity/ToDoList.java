@@ -1,9 +1,6 @@
 package com.myToDoList.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,8 +16,8 @@ import java.util.List;
 @Builder
 @Entity
 public class ToDoList {
-@Id
-@GeneratedValue
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
 private int idList;
 private LocalDate dateCreation;
 private String titreList;
