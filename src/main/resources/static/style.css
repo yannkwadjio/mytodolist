@@ -3,8 +3,9 @@ box-sizing:border-box;
 }
 
 html,body{
-font-family:"Century Gothic",verdana,sans-serif;
-background:-webkit-linear-gradient(left,#2B5876,#4E4376,#4E4376);
+font-family:"ubuntu",verdana,sans-serif;
+background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .classAccueil{
@@ -96,12 +97,12 @@ transition:box-shadow 1s ease-in-out;
 }
 
 #search:hover{
-box-shadow:0px 10px 10px #0C97FA;
+box-shadow:0px 5px 5px #0C97FA;
 
 }
 
 #titreListe:hover{
-box-shadow:0px 10px 10px #0C97FA;
+box-shadow:0px 5px 5px #0C97FA;
 
 }
 
@@ -115,6 +116,8 @@ left:25%;
 
 #ajoutListe{
 position:absolute;
+font-weight:bold;
+color:#000;
 top:1%;
 left:81%;
 -webkit-transition:box-shadow 1s ease-in-out;
@@ -127,13 +130,22 @@ transition:box-shadow 1s ease-in-out;
 box-shadow:0px 10px 10px #0C97FA;
 }
 
+.dlist{
+font-weight:bold;
+font-size:17px;
+border-radius:10px;
+}
+
+
 .col-3{
 border:1px solid black;
 display:flex;
 padding:20px;
 width:25%;
-background:-webkit-linear-gradient(left,#F4A261,#F4A261,#FFC52D);
+background:-webkit-linear-gradient(left,#0C97FA,#0C97FA,#16E1F5);
 border-radius:10px;
 }
+
+
 
 

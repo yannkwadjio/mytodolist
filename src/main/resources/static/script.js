@@ -13,8 +13,6 @@ let stitreListe=document.querySelector('#titreListe');
 
 
 
-
-
 simgListe.addEventListener('mouseover',()=>{
 sliste.style.display='inline-block';
                 srappel.style.display='inline-block';
