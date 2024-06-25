@@ -1,6 +1,4 @@
-package com.todolist.todolist.entity;
-
-import lombok.AllArgsConstructor;
+package com.myToDoList.entity;
 
 
 public enum Repetition {

@@ -1,18 +1,20 @@
-package com.todolist.todolist.service.interfaceImplement;
+package com.myToDoList.service.interfaceImplement;
 
-import com.todolist.todolist.dto.add.TaskAdd;
-import com.todolist.todolist.dto.add.ToDoListAdd;
-import com.todolist.todolist.dto.show.TaskShow;
-import com.todolist.todolist.entity.Repetition;
-import com.todolist.todolist.entity.StatutTache;
-import com.todolist.todolist.entity.ToDoList;
-import com.todolist.todolist.repository.ToDoListRepository;
-import com.todolist.todolist.service.interfaceService.ToDoListService;
+import com.myToDoList.dto.add.TaskAdd;
+import com.myToDoList.dto.add.ToDoListAdd;
+import com.myToDoList.dto.show.TaskShow;
+import com.myToDoList.entity.Repetition;
+import com.myToDoList.entity.StatutTache;
+import com.myToDoList.entity.ToDoList;
+import com.myToDoList.repository.ToDoListRepository;
+import com.myToDoList.service.interfaceService.ToDoListService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 
 @AllArgsConstructor

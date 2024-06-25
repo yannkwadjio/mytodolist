@@ -1,8 +1,6 @@
-package com.todolist.todolist.dto.show;
+package com.myToDoList.dto.show;
 
-import com.todolist.todolist.entity.Priorite;
-import com.todolist.todolist.entity.Repetition;
-import com.todolist.todolist.entity.StatutTache;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

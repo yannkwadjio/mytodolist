@@ -1,4 +1,4 @@
-package com.todolist.todolist.dto.add;
+package com.myToDoList.dto.add;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
