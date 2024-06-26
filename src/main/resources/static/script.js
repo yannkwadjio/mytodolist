@@ -9,6 +9,7 @@ let sglobalMenuRappel=document.querySelector('#globalMenuRappel');
 let sglobalMenuArchive=document.querySelector('#globalMenuArchive');
 let sgloableListe=document.querySelector('#gloableListe');
 let stitreListe=document.querySelector('#titreListe');
+let simgAccueil=document.querySelector('#imgAccueil');
 
 
 
@@ -28,6 +29,22 @@ sliste.style.display='inline-block';
                 sglobalMenuArchive.style.boxShadow='0px 0px 5px RGBA(0,0,0,0.7)'
 
 });
+
+simgAccueil.addEventListener('click',()=>{
+           sliste.style.display='inline-block';
+                           srappel.style.display='inline-block';
+                           sarchive.style.display='inline-block';
+                           sglobalMenuListe.style.display='inline-block';
+                           sglobalMenuListe.style.borderRadius='30px';
+                           sglobalMenuListe.style.boxShadow='0px 0px 5px RGBA(0,0,0,0.7)';
+                           sglobalMenuRappel.style.display='inline-block';
+                           sglobalMenuRappel.style.borderRadius='30px';
+                           sglobalMenuRappel.style.boxShadow='0px 0px 5px RGBA(0,0,0,0.7)';
+                           sglobalMenuArchive.style.display='inline-block';
+                           sglobalMenuArchive.style.borderRadius='30px';
+                           sglobalMenuArchive.style.boxShadow='0px 0px 5px RGBA(0,0,0,0.7)'
+
+           });
 
 simgnotif.addEventListener('mouseover',()=>{
 sliste.style.display='inline-block';
@@ -87,10 +104,15 @@ sglobalMenuRappel.style.boxShadow='0px 0px 0px RGBA(0,0,0,1)';
 sglobalMenuArchive.style.boxShadow='0px 0px 0px RGBA(0,0,0,1)';
 });
 
-let sajoutListe=document.querySelector('#ajoutListe');
-sajoutListe.addEventListener('click',()=>{
-sgloableListe.style.top='20%';
-stitreListe.style.display='inline-block'
 
-})
+simgAccueil.addEventListener('mouseout',()=>{
+           sliste.style.display='none';
+           srappel.style.display='none';
+           sarchive.style.display='none';
+           sglobalMenuListe.style.boxShadow='0px 0px 0px RGBA(0,0,0,1)';
+           sglobalMenuRappel.style.boxShadow='0px 0px 0px RGBA(0,0,0,1)';
+           sglobalMenuArchive.style.boxShadow='0px 0px 0px RGBA(0,0,0,1)';
+           });
+
+
 
