@@ -1,81 +1,18 @@
 *{
 box-sizing:border-box;
-border:1px solid black;
 }
 
 body{
 margin:0px;
 padding:0px;
 font-family:"ubuntu",verdana,sans-serif;
-background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+
 }
 
-.classAccueil{
-width:20%;
-border-radius:100%;
--webkit-transition:box-shadow 1s ease-in-out;
--moz-transition:box-shadow 1s ease-in-out;
--o-transition:box-shadow 1s ease-in-out;
-transition:box-shadow 1s ease-in-out;
-}
-
-.classAccueil:hover{
-box-shadow:0px 0px 5px RGBA(0,0,0,0.7)
-}
-
-.menu{
-display:flex;
-flex-direction:column;
-gap:50px;
-width:400px;
-padding:20px;
-}
-
-.imgMenu{
-width:70px;
-}
-
-#liste{
-position:absolute;
-top:23.5%;
-left:10%;
-}
-
-#rappel{
-position:absolute;
-top:41%;
-left:10%;
-}
-
-#archive{
-position:absolute;
-top:58.5%;
-left:10%;
-}
-
-
-#liste,#rappel,#archive{
-display:none;
-font-weight:bold;
--webkit-transition:display 1s ease-in-out;
--moz-transition:display 1s ease-in-out;
--o-transition:display 1s ease-in-out;
-transition:display 1s ease-in-out;
-}
-
-#globalMenuListe,#globalMenuRappel,#globalMenuArchive{
-border-radius:50px;
-width:90%;
--webkit-transition:border-radius 1s ease-in-out;
--moz-transition:border-radius 1s ease-in-out;
--o-transition:border-radius 1s ease-in-out;
-transition:border-radius 1s ease-in-out;
-}
 
 
 
 #gloableListe{
-border:1px solid black;
 width:73%;
 position:absolute;
 top:13%;
@@ -93,7 +30,6 @@ border-radius:10px;
 
 
 .col-3{
-border:1px solid black;
 display:flex;
 padding:20px;
 width:25%;
@@ -107,7 +43,39 @@ left:40%;
 top:2%;
 width:40%;
 display:inline-block;
+}
 
+.hello{
+display:flex;
+justify-content:center;
+align-items:center;
+position:absolute;
+width:20%;
+height:70%;
+padding:50px;
+background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+text-align:center;
+-webkit-transition:height 2s ease-in-out;
+-moz-transition:height 2s ease-in-out;
+-o-transition:height 2s ease-in-out
+transition:height 2s ease-in-out
+text-align:center;
+text-shadow:0px 0px 0px black;
+font-size:50px;
+font-weight:bold;
+box-shadow:0px 0px 0px black;
+}
+
+.hello:hover{
+
+position:absolute;
+height:100%;
+font-size:50px;
+font-weight:bold;
+
+background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+text-align:center;
+box-shadow:0px 0px 5px #3F2B96;
 }
 
 

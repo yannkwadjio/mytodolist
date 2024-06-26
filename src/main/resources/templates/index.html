@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" xmlns:th="http://www.thymeleaf.org" xmlns:tiles="http://www.thymeleaf.org">
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,22 +11,19 @@
     <title>Accueil: MY ToDoList</title>
 </head>
 <body>
-<div class="menu">
-    <div class="classAccueil"><img th:src="@{/icone/menu.png}" alt="menu" id="imgAccueil" class="imgMenu"></div>
-    <div id="globalMenuListe"><span id="liste" class="libelle">Liste des tâches</span>
-        <div><img th:src="@{/icone/liste-de-taches.png}" alt="menu" id="imgListe" class="imgMenu"></div>
-    </div>
-    <div id="globalMenuRappel"><span id="rappel" class="libelle">Rappels</span>
-        <div><img th:src="@{/icone/notification.png}" alt="menu" id="imgnotif" class="imgMenu"></div>
-    </div>
-    <div id="globalMenuArchive"><span id="archive" class="libelle">Archivés</span>
-        <div><img th:src="@{/icone/archiver.png}" alt="menu" id="imgarchive" class="imgMenu"></div>
-    </div>
+
+<div class="hello">
+   Gérez efficacement vos tâches au quotidien
 </div>
 
-<form th:action="@{/formulaire}" method="get">
-<input type="submit" value="Aller au formulaire">
+
+<form  th:action="@{/formulaire}" method="get"  id="formAjoutListe">
+    <div class="input-group mb-3">
+        <input type="text"   placeholder="Créer une nouvelle liste" aria-label="Nouvelle liste" aria-describedby="button-addon2" class="form-control">
+        <button class="btn btn-outline-primary" type="submit" id="button-addon2">Enregistrer</button>
+    </div>
 </form>
+
 
 <div id="gloableListe" class="container">
     <div class="row">

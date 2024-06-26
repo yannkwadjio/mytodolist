@@ -20,15 +20,15 @@ public class Navigation {
         return  "index";
     }
 
-
     @GetMapping("/formulaire")
     public String showForm(Model model) {
+        model.addAttribute("liste",toDoListController.getAllToDoList());
         model.addAttribute("toDoListAdd", new ToDoListAdd());
         return "formulaire";
     }
 
     @PostMapping("/new")
-    public String createagence(@ModelAttribute ToDoListAdd toDoListAdd, Model model) {
+    public String createlist(@ModelAttribute ToDoListAdd toDoListAdd, Model model) {
         toDoListController.addToDoList(toDoListAdd);
         return "redirect:/index";
     }
