@@ -1,15 +1,18 @@
 services:
-  postgres-server:
-    container_name: 'postgres-server'
-    image: 'postgres'
+  mysql:
+    container_name: 'guide-mysql'
+    image: 'mysql:latest'
     environment:
-      - 'POSTGRES_PASSWORD=todolist'
+      - 'MYSQL_DATABASE=todolist'
+      - 'MYSQL_PASSWORD=todolist'
+      - 'MYSQL_ROOT_PASSWORD=todolist'
+      - 'MYSQL_USER=todolist'
     ports:
-      - 5432:5432
+      - 3306:3306
 
   adminer:
     image: adminer
     container_name: adminer-console
     restart: always
     ports:
-      - 8085:8080
+      - 8086:8080

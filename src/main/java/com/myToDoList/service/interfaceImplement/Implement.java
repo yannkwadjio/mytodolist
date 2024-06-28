@@ -1,7 +1,6 @@
 package com.myToDoList.service.interfaceImplement;
 
 import com.myToDoList.dto.add.TaskAdd;
-import com.myToDoList.dto.add.ToDoListAdd;
 import com.myToDoList.dto.show.TaskShow;
 import com.myToDoList.entity.Repetition;
 import com.myToDoList.entity.StatutTache;
@@ -19,13 +18,13 @@ import java.util.List;
 
 @AllArgsConstructor
 @Service
-public class ToDoListServiceImplement implements ToDoListService {
+public class Implement implements ToDoListService {
     ToDoListRepository toDoListRepository;
 
     @Override
-    public String addToDoList(ToDoListAdd toDoListAdd) {
+    public String addToDoList(ToDoList toDoList) {
         ToDoList newToDoList = new ToDoList();
-        newToDoList.setTitreList(toDoListAdd.getTitreList());
+        newToDoList.setTitreList(toDoList.getTitreList());
         ToDoList existingList = toDoListRepository.findByTitreList(newToDoList.getTitreList());
         String state = null;
         if (existingList == null) {
@@ -51,9 +50,9 @@ public class ToDoListServiceImplement implements ToDoListService {
     }
 
     @Override
-    public ToDoList updateToDoList(String titreList, ToDoListAdd toDoListAdd) {
+    public ToDoList updateToDoList(String titreList, ToDoList toDoList) {
         ToDoList existingToDoList = toDoListRepository.findByTitreList(titreList);
-        existingToDoList.setTitreList(toDoListAdd.getTitreList());
+        existingToDoList.setTitreList(toDoList.getTitreList());
         return toDoListRepository.save(existingToDoList);
     }
 
