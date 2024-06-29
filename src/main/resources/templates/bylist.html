@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{style.css}">
+    <link rel="stylesheet" th:href="@{bootstrap.css}">
+    <title>Bienvenu: MY ToDoList</title>
+</head>
+<body>
+
+<div class="hello">
+    Gérez efficacement vos tâches au quotidien
+</div>
+
+
+
+<form th:action="@{/create}" method="get" id="formAjoutListe">
+    <div class="input-group mb-3">
+        <input type="text" placeholder="Créer une nouvelle liste" aria-label="Nouvelle liste"
+               aria-describedby="button-addon2" class="form-control">
+        <button class="btn btn-outline-primary" type="submit" id="button-addon2">Enregistrer</button>
+    </div>
+</form>
+
+
+
+<div id="gloableListe" class="container">
+    <div class="row">
+        <div class="col-12">
+           <p th:text="${liste.titreList}"></p>
+            <p th:text="${liste.dateCreation}"></p>
+            <p th:text="${liste.tache}"></p>
+        </div>
+    </div>
+</div>
+
+
+<script th:src="@{script.js}"></script>
+<script th:src="@{bootstrap.bundle.js}"></script>
+</body>
+</html>

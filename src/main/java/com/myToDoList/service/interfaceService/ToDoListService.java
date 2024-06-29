@@ -3,7 +3,6 @@ package com.myToDoList.service.interfaceService;
 
 
 import com.myToDoList.dto.add.TaskAdd;
-import com.myToDoList.dto.add.ToDoListAdd;
 import com.myToDoList.dto.show.TaskShow;
 import com.myToDoList.entity.ToDoList;
 
@@ -11,13 +10,13 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface ToDoListService {
-    String addToDoList(ToDoListAdd toDoListAdd);
+    String addToDoList(ToDoList toDoList);
 
     List<ToDoList> getAllToDoList();
 
     ToDoList getToDoList(String titreListe);
 
-    ToDoList updateToDoList(String titreList, ToDoListAdd toDoListAdd);
+    ToDoList updateToDoList(String titreList, ToDoList toDoList);
 
     String deleteToDoList(String titreListe);
 
